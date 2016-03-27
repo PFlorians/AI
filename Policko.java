@@ -1,5 +1,6 @@
 package kon;
 /*
+ * Policko je objekt a ma vlastne atributy
  * policko found==99999 ak neobjaveny
  * found==-1 ak idem navstivit
  * found==0 ak navstiveny
