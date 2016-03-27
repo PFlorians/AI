@@ -1,5 +1,9 @@
 package kon;
 import java.util.*;
+/*
+ * pomocna datova struktura, ako sucast algoritmu 
+ * prehladavania do hlbky
+ */
 public class Stack {
 	private ArrayList<Policko> stk;
 	
@@ -15,7 +19,7 @@ public class Stack {
 	public Stack pop()
 	{
 		int tmp=this.stk.size()-1;
-		System.out.println("popping: " + this.stk.get(tmp).getY() + " " + this.stk.get(tmp).getX());
+		//System.out.println("popping: " + this.stk.get(tmp).getY() + " " + this.stk.get(tmp).getX());
 		this.stk.remove(tmp);
 		return this;
 	}
@@ -42,5 +46,9 @@ public class Stack {
 	public boolean isEmpty()
 	{
 		return this.stk.isEmpty();
+	}
+	public int getSize()
+	{
+		return this.stk.size();
 	}
 }
